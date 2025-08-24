@@ -1,0 +1,6 @@
+{
+  "parent" : "item/generated",
+  "textures" : {
+    "layer0": "theblueportal:item/royal_leaf_eel_bucket"
+  }
+}
