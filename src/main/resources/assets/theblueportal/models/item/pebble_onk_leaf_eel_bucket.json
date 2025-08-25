@@ -1,6 +1,0 @@
-{
-  "parent" : "item/generated",
-  "textures" : {
-    "layer0": "theblueportal:item/pebble_onk_leaf_eel_bucket"
-  }
-}

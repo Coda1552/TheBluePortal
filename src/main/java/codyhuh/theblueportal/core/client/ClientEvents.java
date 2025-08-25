@@ -1,11 +1,10 @@
 package codyhuh.theblueportal.core.client;
 
 import codyhuh.theblueportal.core.TheBluePortal;
-import codyhuh.theblueportal.core.client.models.leaf_eels.GiantLeafEelModel;
+import codyhuh.theblueportal.core.client.models.leaf_eels.*;
 import codyhuh.theblueportal.core.client.renders.LeafEelRenderer;
 import codyhuh.theblueportal.core.registry.ModEntities;
 import codyhuh.theblueportal.core.registry.ModItems;
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -24,6 +23,12 @@ public class ClientEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions e) {
         e.registerLayerDefinition(TBPLayers.GIANT_LEAF_EEL_LAYER, GiantLeafEelModel::createBodyLayer);
+        e.registerLayerDefinition(TBPLayers.BRONZE_LEAF_EEL_LAYER, BronzeLeafEelModel::createBodyLayer);
+        e.registerLayerDefinition(TBPLayers.PEACOCK_LEAF_EEL_LAYER, PeacockLeafEelModel::createBodyLayer);
+        e.registerLayerDefinition(TBPLayers.MANGO_LEAF_EEL_LAYER, MangoLeafEelModel::createBodyLayer);
+        e.registerLayerDefinition(TBPLayers.PEBBLE_ONK_LAYER, PebbleOnkModel::createBodyLayer);
+        e.registerLayerDefinition(TBPLayers.SLIM_LEAF_EEL_LAYER, SlimLeafEelModel::createBodyLayer);
+        e.registerLayerDefinition(TBPLayers.TINY_LEAF_EEL_LAYER, TinyLeafEelModel::createBodyLayer);
     }
 
     @SubscribeEvent

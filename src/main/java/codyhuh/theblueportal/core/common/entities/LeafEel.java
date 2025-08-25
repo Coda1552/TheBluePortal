@@ -9,7 +9,6 @@ import net.minecraft.world.level.Level;
 
 public class LeafEel extends TBPFishAnimal {
     public final AnimationState idleAnimationState = new AnimationState();
-    //public final AnimationState flopAnimationState = new AnimationState();
     public final AnimationState swimAnimationState = new AnimationState();
 
     public LeafEel(EntityType<? extends TBPFishAnimal> type, Level level) {
@@ -38,7 +37,6 @@ public class LeafEel extends TBPFishAnimal {
     private void setupAnimationStates() {
         this.idleAnimationState.animateWhen(!this.walkAnimation.isMoving() && this.isInWaterOrBubble(), this.tickCount);
         this.swimAnimationState.animateWhen(this.walkAnimation.isMoving() && this.isInWaterOrBubble(), this.tickCount);
-        //this.flopAnimationState.animateWhen(!this.isInWaterOrBubble(), this.tickCount);
     }
 
     @Override
@@ -54,6 +52,11 @@ public class LeafEel extends TBPFishAnimal {
     @Override
     public boolean hasVariants() {
         return true;
+    }
+
+    @Override
+    public int maxVariant() {
+        return 8;
     }
 
     @Override

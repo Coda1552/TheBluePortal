@@ -20,31 +20,31 @@
       "predicate": {
         "theblueportal:variant": 2
       },
-      "model": "theblueportal:item/common_leaf_eel_bucket"
+      "model": "theblueportal:item/mango_leaf_eel_bucket"
     },
     {
       "predicate": {
         "theblueportal:variant": 3
       },
-      "model": "theblueportal:item/mango_leaf_eel_bucket"
+      "model": "theblueportal:item/peacock_leaf_eel_bucket"
     },
     {
       "predicate": {
         "theblueportal:variant": 4
       },
-      "model": "theblueportal:item/peacock_leaf_eel_bucket"
+      "model": "theblueportal:item/pebble_onk_bucket"
     },
     {
       "predicate": {
         "theblueportal:variant": 5
       },
-      "model": "theblueportal:item/pebble_onk_leaf_eel_bucket"
+      "model": "theblueportal:item/common_leaf_eel_bucket"
     },
     {
       "predicate": {
         "theblueportal:variant": 6
       },
-      "model": "theblueportal:item/pod_leaf_eel_bucket"
+      "model": "theblueportal:item/vibrant_leaf_eel_bucket"
     },
     {
       "predicate": {
@@ -56,7 +56,7 @@
       "predicate": {
         "theblueportal:variant": 8
       },
-      "model": "theblueportal:item/vibrant_leaf_eel_bucket"
+      "model": "theblueportal:item/pod_leaf_eel_bucket"
     }
   ]
 }

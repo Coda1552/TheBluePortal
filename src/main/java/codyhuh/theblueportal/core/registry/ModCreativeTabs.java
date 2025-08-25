@@ -13,7 +13,7 @@ public class ModCreativeTabs {
     public static final RegistryObject<CreativeModeTab> TBP_TAB = CREATIVE_TABS.register("tbp_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + TheBluePortal.MOD_ID))
-                    .icon(ModItems.LEAF_EEL_BUCKET.get()::getDefaultInstance)
+                    .icon(ModItems.LEAF_EEL.get()::getDefaultInstance)
                     .displayItems((displayParams, output) -> {
                         for (var item : ModItems.ITEMS.getEntries()) {
                             output.accept(item.get());

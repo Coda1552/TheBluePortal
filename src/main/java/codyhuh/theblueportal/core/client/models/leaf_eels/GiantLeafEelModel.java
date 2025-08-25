@@ -34,7 +34,7 @@ public class GiantLeafEelModel<T extends LeafEel> extends TBPModel<T> {
 	private final ModelPart sidefin_segment1_left;
 
 	public GiantLeafEelModel(ModelPart root) {
-		super(1.0F, 1.0F);
+		super(1.0F, 0.0F);
 		this.root = root.getChild("root");
 		this.body = this.root.getChild("body");
 		this.head = this.body.getChild("head");
@@ -125,7 +125,7 @@ public class GiantLeafEelModel<T extends LeafEel> extends TBPModel<T> {
 	public void setupAnim(LeafEel pEntity, float pLimbSwing, float pLimbSwingAmount, float pAgeInTicks, float pNetHeadYaw, float pHeadPitch) {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 
-		if (pEntity.isInWaterOrBubble()){
+		if (pEntity.isInWaterOrBubble()) {
 			this.body.xRot = pHeadPitch * ((float)Math.PI / 180F);
 			this.body.zRot = pNetHeadYaw * (((float)Math.PI / 180F)/2);
 
@@ -136,8 +136,6 @@ public class GiantLeafEelModel<T extends LeafEel> extends TBPModel<T> {
 		}
 
 		this.animateIdle(pEntity.idleAnimationState, GiantLeafEelAnimations.IDLE, pAgeInTicks, 1.0F, 1-Math.abs(pLimbSwingAmount));
-
-		//this.animate(pEntity.flopAnimationState, MoonyAnims.FLOP, pAgeInTicks, 1.0F);
 	}
 
 	@Override

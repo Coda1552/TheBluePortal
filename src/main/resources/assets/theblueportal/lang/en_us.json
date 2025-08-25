@@ -3,9 +3,18 @@
 
   "item.theblueportal.leaf_eel_spawn_egg": "Leaf Eel Spawn Egg",
   "item.theblueportal.leaf_eel_bucket": "Bucket of Leaf Eel",
+  "item.theblueportal.leaf_eel": "Leaf Eel",
+  "item.theblueportal.cooked_leaf_eel": "Cooked Leaf Eel",
 
   "entity.theblueportal.leaf_eel": "Leaf Eel",
 
-
-  "entity.theblueportal.leaf_eel.0": "Giant"
+  "entity.theblueportal.leaf_eel.0": "Giant",
+  "entity.theblueportal.leaf_eel.1": "Bronze",
+  "entity.theblueportal.leaf_eel.2": "Mango",
+  "entity.theblueportal.leaf_eel.3": "Peacock",
+  "entity.theblueportal.leaf_eel.4": "Pebble Onk",
+  "entity.theblueportal.leaf_eel.5": "Common",
+  "entity.theblueportal.leaf_eel.6": "Vibrant",
+  "entity.theblueportal.leaf_eel.7": "Royal",
+  "entity.theblueportal.leaf_eel.8": "Pod"
 }
